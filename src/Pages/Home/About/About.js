@@ -8,14 +8,13 @@ const About = () => {
         <div className="hero-content flex-col lg:flex-row">
           <img
             src={about} alt=""
-            className="max-w-sm rounded-lg shadow-2xl"
+            className="w-2/4 rounded-lg shadow-2xl"
           />
           <div>
-            <h1 className="text-5xl font-bold">Box Office News!</h1>
+            <p>DECENTRALISED ECONOMY</p>
+            <h1 className="text-5xl font-bold">We’ve built a platform to buy and sell shares.</h1>
             <p className="py-6">
-              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-              excepturi exercitationem quasi. In deleniti eaque aut repudiandae
-              et a id nisi.
+            Spend real fights effective anything extra by leading. Mouthwatering leading how real formula also locked-in have can mountain thought. Jumbo plus shine sale.
             </p>
             <button className="btn btn-primary">Get Started</button>
           </div>
