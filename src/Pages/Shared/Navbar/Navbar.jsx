@@ -38,8 +38,8 @@ const Navbar = () => {
     <div>
       <nav
         style={{
-          backgroundColor: isSticky ? "white" : "transparent",
-          color: isSticky ? "black" : "white",
+          backgroundColor: isSticky ? "white" : "white",
+          color: isSticky ? "black" : "black",
           position: "fixed",
           left: 0,
           right: 0,

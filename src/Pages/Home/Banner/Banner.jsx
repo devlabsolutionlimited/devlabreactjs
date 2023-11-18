@@ -1,11 +1,10 @@
 import React from "react";
-import img from "../../../assets/images/hero/bg-shapes.svg";
-import img1 from "../../../assets/images/hero/hero-image.png";
+import img from "../../../assets/images/Banner.png";
 import Slider from "../Slider/Slider";
 
 const Banner = () => {
   return (
-    <div className="bg-[#081828] text-white relative h-screen">
+    <div className="bg-white text-white relative h-screen">
       <div className="hidden lg:block">
         <img
           src={img}
@@ -29,7 +28,7 @@ const Banner = () => {
           </button>
         </div>
 
-        <Slider></Slider>
+        {/* <Slider></Slider> */}
       </div>
     </div>
   );

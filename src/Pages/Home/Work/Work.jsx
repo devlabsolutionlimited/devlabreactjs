@@ -30,11 +30,19 @@ const tabImages = {
 
 const Work = () => {
   const [activeTab, setActiveTab] = useState(0);
+  const [showAllImages, setShowAllImages] = useState(false);
+
+  const isAllTab = tabs[activeTab] === "All";
+  const maxImagesToShow = isAllTab && !showAllImages ? 6 : undefined;
 
   const allImages =
     activeTab === 0
-      ? tabs.reduce((acc, tab) => [...acc, ...tabImages[tab]], [])
-      : tabImages[tabs[activeTab]];
+      ? isAllTab
+        ? tabs.reduce((acc, tab) => [...acc, ...tabImages[tab]], []).slice(0, maxImagesToShow)
+        : tabs.reduce((acc, tab) => [...acc, ...tabImages[tab]])
+      : showAllImages
+      ? tabImages[tabs[activeTab]]
+      : tabImages[tabs[activeTab]].slice(0, 6);
 
   const chunkArray = (array, size) => {
     const chunkedArray = [];
@@ -95,7 +103,7 @@ const Work = () => {
                       alt={`Item ${rowIndex * 4 + colIndex + 1}`}
                       className="w-[400px] h-[300px] rounded-lg object-cover"
                     />
-                    <div className="absolute bottom-0 left-0 p-4 m-7 rounded-md text-black bg-white">                    
+                    <div className="absolute bottom-0 left-0 p-4 m-7 rounded-md text-black bg-white">
                       <p className="text-lg text-[#727272]">Graphics Design</p>
                       <p className="text-lg font-semibold">Packaging Design</p>
                     </div>
@@ -105,6 +113,16 @@ const Work = () => {
             ))}
           </div>
         </div>
+        {isAllTab && (
+          <div className="text-center">
+            <button
+              className="py-3 px-5 mt-7 bg-primary text-white font-semibold rounded-md cursor-pointer"
+              onClick={() => setShowAllImages(!showAllImages)}
+            >
+              {showAllImages ? "See Less" : "See More"}
+            </button>
+          </div>
+        )}
       </div>
     </div>
   );
