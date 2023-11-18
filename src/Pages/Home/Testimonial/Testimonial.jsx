@@ -1,29 +1,33 @@
 import React, { useState } from "react";
 import img from "../../../assets/images/user.webp";
 import img1 from "../../../assets/images/quotation.png";
-import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
 const Card = ({ id, title, description, image, name, logo }) => {
   return (
-    <div className="bg-white p-6 rounded-md shadow-md">
-      <p className="text-[#727272] text-base">{description}</p>
+    <div className="bg-white p-10 rounded-lg shadow-md relative overflow-hidden">
+      <div className="top-right-corner bg-primary p-7 rounded-full -mt-7 -mr-7 absolute top-0 right-0"></div>
 
-      <div className="text-center">
-        <img
-          src={image}
-          alt={title}
-          className="w-20 h-20 object-cover rounded-full mb-4 mx-auto"
-        />
-        <div className="flex justify-between">
-          <h4 className="text-xl font-spartan text-black font-medium mb-2">
+      <p className="text-[#727272] text-start text-base mb-8">{description}</p>
+
+      <div className="text-start flex items-center">
+        <div>
+          <img
+            src={image}
+            alt={title}
+            className="w-14 h-14 object-cover rounded-full mb-4 mx-auto"
+          />
+        </div>
+        <div className="flex flex-col ml-3">
+          <h4 className="text-sm font-spartan text-black font-medium">
             {title}
           </h4>
-          <p className="text-[#727272] text-sm font-medium font-spartan mb-4">
+          <p className="text-[#727272] text-xs font-medium font-spartan mb-4">
             {name}
           </p>
         </div>
-        <div className="flex justify-center mt-4">
+        <div className=" ml-20 mb-4">
           <img src={logo} alt="" className="w-12 h-12" />
         </div>
       </div>
@@ -116,32 +120,53 @@ const CardGrid = () => {
     },
   ]);
 
-  const chunkArray = (array, size) => {
-    const chunkedArray = [];
-    for (let i = 0; i < array.length; i += size) {
-      chunkedArray.push(array.slice(i, i + size));
-    }
-    return chunkedArray;
+  const responsive = {
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+    },
   };
 
-  const groupedCards = chunkArray(cards, 3);
-
   return (
-    <div className="bg-[#F4F7FA] py-28">
-      <div className="max-w-7xl mx-auto w-full">
+    <div className="bg-[#F4F7FA] pt-[200px] pb-28">
+      <div className="text-center">
+        <h3 className="text-base font-spartan text-primary font-semibold mb-3">
+          What We Offer
+        </h3>
+        <h1 className="text-4xl text-black font-spartan font-bold mb-7">
+          Our Services
+        </h1>
+        <p className="text-base text-[#727272] mb-20">
+          There are many variations of passages of Lorem Ipsum available, but
+          the majority have <br /> suffered alteration in some form.
+        </p>
+      </div>
+      <div className="max-w-7xl mx-auto relative">
+        <div className="absolute top-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+          {cards.map((_, index) => (
+            <div
+              key={index}
+              className="h-2 w-2 bg-primary rounded-full cursor-pointer"
+            />
+          ))}
+        </div>
         <Carousel
-          autoPlay
-          interval={3000}
-          showThumbs={false}
-          showStatus={false}
-          infiniteLoop
+          responsive={responsive}
+          swipeable={true}
+          itemClass="px-3"
+          customLeftArrow={<></>}
+          customRightArrow={<></>}
         >
-          {groupedCards.map((group, index) => (
-            <div key={index} className="flex justify-center gap-6">
-              {group.map((card) => (
-                <Card key={card.id} {...card} />
-              ))}
-            </div>
+          {cards.map((card) => (
+            <Card key={card.id} {...card} />
           ))}
         </Carousel>
       </div>

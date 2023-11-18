@@ -4,28 +4,28 @@ import img2 from "../../../assets/images/work2.jpg";
 
 const tabs = [
   "All",
-  "API Testing",
-  "Automation Testing",
-  "Blockchain Testing",
-  "Security Testing",
-  "Desktop App Testing",
-  "Game Testing",
-  "Mobile App Testing",
-  "Performance Testing",
-  "Web App Testing",
+  "UI/UX",
+  "Digital Marketing",
+  "Web Application",
+  "IT Consulting Service",
+  "Mobile Application",
+  "Graphics Design",
+  "SQA",
+  "Games Development",
+  "Desktop App Development",
 ];
 
 const tabImages = {
   All: [img1, img2],
-  "API Testing": [img1, img2],
-  "Automation Testing": [img1, img2],
-  "Blockchain Testing": [img1, img2],
-  "Security Testing": [img1, img2],
-  "Desktop App Testing": [img1, img2],
-  "Game Testing": [img1, img2],
-  "Mobile App Testing": [img1, img2],
-  "Performance Testing": [img1, img2],
-  "Web App Testing": [img1, img2],
+  "UI/UX": [img1, img2],
+  "Digital Marketing": [img1, img2],
+  "Web Application": [img1, img2],
+  "IT Consulting Service": [img1, img2],
+  "Mobile Application": [img1, img2],
+  "Graphics Design": [img1, img2],
+  "SQA": [img1, img2],
+  "Games Development": [img1, img2],
+  "Desktop App Development": [img1, img2],
 };
 
 const Work = () => {
@@ -93,11 +93,11 @@ const Work = () => {
                     <img
                       src={imageUrl}
                       alt={`Item ${rowIndex * 4 + colIndex + 1}`}
-                      className="w-[400px] h-[300px] rounded-lg"
+                      className="w-[400px] h-[300px] rounded-lg object-cover"
                     />
-                    <div className="absolute bottom-0 left-0 p-4 m-7 rounded-md text-black bg-white">
-                      {/* Add your text here */}
-                      <p className="text-lg font-semibold">Your Text Here</p>
+                    <div className="absolute bottom-0 left-0 p-4 m-7 rounded-md text-black bg-white">                    
+                      <p className="text-lg text-[#727272]">Graphics Design</p>
+                      <p className="text-lg font-semibold">Packaging Design</p>
                     </div>
                   </div>
                 ))}

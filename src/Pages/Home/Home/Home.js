@@ -4,6 +4,8 @@ import About from "../About/About";
 import Cards from "../Services/Cards";
 import Work from "../Work/Work";
 import Testimonial from "../Testimonial/Testimonial";
+import VideoCover from "../Video/VideoCover";
+import Team from "../Team/Team";
 
 const Home = () => {
   return (
@@ -11,6 +13,8 @@ const Home = () => {
       <Banner></Banner>
       <Cards></Cards>
       <Work></Work>
+      <VideoCover/>
+      <Team/>
       <Testimonial></Testimonial>
       <About></About>
     </div>

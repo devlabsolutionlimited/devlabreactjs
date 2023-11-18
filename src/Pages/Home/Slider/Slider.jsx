@@ -20,9 +20,9 @@ const AutoSlider = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % sliderContent.length);
-    }, 3000); // Change slide every 3 seconds
+    }, 3000); 
 
-    return () => clearInterval(interval); // Cleanup interval on component unmount
+    return () => clearInterval(interval); 
   }, []);
 
   return (
