@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import img from "../../../assets/images/user.webp";
-import img1 from "../../../assets/images/quotation.png";
+import img from "../../assets/images/user.webp";
+import img1 from "../../assets/images/quotation.png";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 

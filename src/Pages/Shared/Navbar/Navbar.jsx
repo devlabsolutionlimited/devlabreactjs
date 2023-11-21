@@ -71,7 +71,7 @@ const Navbar = () => {
                   Home
                 </Link>
                 <Link
-                  to="/instructors"
+                  to="/about"
                   className="  hover:text-primary rounded-md text-base font-semibold"
                 >
                   About
@@ -183,12 +183,12 @@ const Navbar = () => {
               <FaHome className="inline-block h-6 w-5 mr-2" /> Home
             </Link>
             <Link
-              to="/instructors"
+              to="/about"
               className="block px-4 py-2 text-base"
               onClick={handleToggle}
             >
               <FaChalkboardTeacher className="inline-block h-6 w-5 mr-2" />{" "}
-              Instructors
+              About
             </Link>
             <Link
               to="/classes"

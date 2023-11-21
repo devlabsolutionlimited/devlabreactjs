@@ -1,8 +1,8 @@
 import React from "react";
-import User1 from "../../../assets/images/user1.jpg";
-import User2 from "../../../assets/images/user2.jpg";
-import User3 from "../../../assets/images/user3.jpg";
-import User4 from "../../../assets/images/user4.jpg";
+import User1 from "../../assets/images/user1.jpg";
+import User2 from "../../assets/images/user2.jpg";
+import User3 from "../../assets/images/user3.jpg";
+import User4 from "../../assets/images/user4.jpg";
 import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 const teamMembers = [

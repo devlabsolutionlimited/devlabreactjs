@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import img1 from "../../../assets/images/PET.png";
-import img2 from "../../../assets/images/PET_MOBILE.png";
-import img3 from "../../../assets/images/PET_MOBILE1.png";
-import img4 from "../../../assets/images/PET_MOBILE2.jpg";
-import img5 from "../../../assets/images/PET2.png";
-import img6 from "../../../assets/images/PET3.jpg";
+import img1 from "../../assets/images/PET.png";
+import img2 from "../../assets/images/PET_MOBILE.png";
+import img3 from "../../assets/images/PET_MOBILE1.png";
+import img4 from "../../assets/images/PET_MOBILE2.jpg";
+import img5 from "../../assets/images/PET2.png";
+import img6 from "../../assets/images/PET3.jpg";
 
 const AutoSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);

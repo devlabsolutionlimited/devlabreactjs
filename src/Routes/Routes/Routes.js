@@ -1,5 +1,5 @@
 import Main from "../../Layout/Main";
-import About from "../../Pages/Home/About/About";
+import About from "../../Pages/About/About/About";
 import Home from "../../Pages/Home/Home/Home";
 import Login from "../../Pages/Login/Login";
 

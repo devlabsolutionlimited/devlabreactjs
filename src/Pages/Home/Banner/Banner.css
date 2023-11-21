@@ -1,0 +1,12 @@
+.moveArrow {
+  animation: moveDiagonal 2s infinite alternate;
+}
+
+@keyframes moveDiagonal {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(20px, 20px);
+  }
+}

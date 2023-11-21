@@ -1,11 +1,13 @@
 import React from "react";
 import Banner from "../Banner/Banner";
-import About from "../About/About";
 import Cards from "../Services/Cards";
 import Work from "../Work/Work";
-import Testimonial from "../Testimonial/Testimonial";
+import Testimonial from "../../../Component/Testimonial/Testimonial";
 import VideoCover from "../Video/VideoCover";
-import Team from "../Team/Team";
+import Team from "../../../Component/Team/Team";
+import Blog from "../Blog/Blog";
+import Faq from "../Faq/Faq";
+
 
 const Home = () => {
   return (
@@ -16,7 +18,10 @@ const Home = () => {
       <VideoCover/>
       <Team/>
       <Testimonial></Testimonial>
-      <About></About>
+      {/* <About></About> */}
+      <Blog/>
+      <Faq/>
+      {/* <ImageSection/> */}
     </div>
   );
 };

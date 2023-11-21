@@ -1,7 +1,7 @@
 import React from "react";
-import about from '../../../assets/images/about/about-image.jpg'
+import about from '../../assets/images/about/about-image.jpg'
 
-const About = () => {
+const Abouts = () => {
   return (
     <div className="bg-white">
       <div className="max-w-7xl mx-auto py-52">
@@ -24,4 +24,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Abouts;
