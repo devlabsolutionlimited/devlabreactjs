@@ -71,6 +71,12 @@ const Navbar = () => {
                   Home
                 </Link>
                 <Link
+                  to="/products"
+                  className="  hover:text-primary rounded-md text-base font-semibold"
+                >
+                  Products
+                </Link>
+                <Link
                   to="/about"
                   className="  hover:text-primary rounded-md text-base font-semibold"
                 >
@@ -181,6 +187,13 @@ const Navbar = () => {
               onClick={handleToggle}
             >
               <FaHome className="inline-block h-6 w-5 mr-2" /> Home
+            </Link>
+            <Link
+              to="/products"
+              className="block px-4 py-2 mt-3 text-base"
+              onClick={handleToggle}
+            >
+              <FaHome className="inline-block h-6 w-5 mr-2" /> Products
             </Link>
             <Link
               to="/about"

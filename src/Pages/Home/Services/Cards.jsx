@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import img1 from "../../../assets/images/ui.png";
+import img1 from "../../../assets/images/hero/ux-design(1).png";
 
 const cardsData = [
   {
@@ -68,7 +68,7 @@ const Card = ({ icon, text, description }) => {
   return (
     <div className="bg-white p-11 w-full m-2 rounded-2xl shadow-3xl gap-20 shadow-[#F4F7FA]">
       <div className="flex items-center justify-center mb-6">
-        <img src={icon} alt={text} className="h-16 w-16  py-3 px-4 bg-primary text-white rounded-lg" />
+        <img src={icon} alt={text} className="h-20 w-20  py-3 px-4 border-2 border-primary text-white rounded-lg" />
       </div>
       <p className="text-xl text-center font-spartan font-semibold text-black mb-4">{text}</p>
       <p className="text-[16px] text-[#727272] font-sans text-center">{description}</p>

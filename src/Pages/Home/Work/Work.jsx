@@ -101,7 +101,7 @@ const Work = () => {
                     <img
                       src={imageUrl}
                       alt={`Item ${rowIndex * 4 + colIndex + 1}`}
-                      className="w-[400px] h-[300px] rounded-lg object-cover"
+                      className="w-[400px] h-[250px] rounded-lg object-cover"
                     />
                     <div className="absolute bottom-0 left-0 p-4 m-7 rounded-md text-black bg-white">
                       <p className="text-lg text-[#727272]">Graphics Design</p>
