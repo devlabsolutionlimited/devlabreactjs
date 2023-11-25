@@ -89,7 +89,7 @@ const Navbar = () => {
                   Pages
                 </Link>
                 <Link
-                  to="/dashboard"
+                  to="/blog"
                   className="  hover:text-primary rounded-md text-base font-semibold"
                 >
                   Blog
@@ -202,6 +202,14 @@ const Navbar = () => {
             >
               <FaChalkboardTeacher className="inline-block h-6 w-5 mr-2" />{" "}
               About
+            </Link>
+            <Link
+              to="/blog"
+              className="block px-4 py-2 text-base"
+              onClick={handleToggle}
+            >
+              <FaChalkboardTeacher className="inline-block h-6 w-5 mr-2" />{" "}
+              Blog
             </Link>
             <Link
               to="/classes"
