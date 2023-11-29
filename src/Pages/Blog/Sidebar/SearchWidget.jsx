@@ -1,5 +1,6 @@
 import React from 'react';
 import "./Sidebar.css";
+import "react-modern-drawer/dist/index.css";
 
 const SearchWidget = () => {
   return (

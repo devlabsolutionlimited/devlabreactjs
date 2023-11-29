@@ -7,7 +7,7 @@
     background-color: #fff;
     -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.11);
             box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.11);
-    border-top: 3px solid #7E57FF;
+    border-top: 3px solid #e74c3c;
   }
   
   @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
@@ -60,7 +60,7 @@
   .sidebar .widget.search-widget form input:focus {
     -webkit-box-shadow: 0px 0px 23px #0000000f !important;
             box-shadow: 0px 0px 23px #0000000f !important;
-    border-color: #7E57FF;
+    border-color: #e74c3c;
   }
   
   .sidebar .widget.search-widget form input::-webkit-input-placeholder {
@@ -99,7 +99,7 @@
   }
   
   .sidebar .widget.search-widget form button:hover {
-    color: #7E57FF !important;
+    color: #e74c3c !important;
   }
   
   .sidebar .widget.popular-feeds .single-popular-feed {
@@ -136,7 +136,7 @@
   }
   
   .sidebar .widget.popular-feeds .single-popular-feed .feed-desc .post-title a:hover {
-    color: #7E57FF;
+    color: #e74c3c;
   }
   
   .sidebar .widget.popular-feeds .single-popular-feed .feed-desc .time {
@@ -171,7 +171,7 @@
   }
   
   .sidebar .widget.categories-widget ul li a:hover {
-    color: #7E57FF;
+    color: #e74c3c;
     padding-left: 10px;
   }
   
@@ -199,7 +199,7 @@
   }
   
   .popular-tag-widget .tags > a:hover {
-    background-color: #7E57FF;
+    background-color: #e74c3c;
     color: #fff;
     border-color: transparent;
   }
