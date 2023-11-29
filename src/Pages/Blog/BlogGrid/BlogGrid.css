@@ -1,0 +1,161 @@
+.pagination {
+    text-align: left;
+    margin: 60px 0 0 0;
+    display: block;
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .pagination {
+      margin-top: 50px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .pagination {
+      margin-top: 40px;
+    }
+  }
+  
+  .pagination.center {
+    text-align: center;
+  }
+  
+  .pagination.right {
+    text-align: right;
+  }
+  
+  .pagination.left {
+    text-align: left;
+  }
+  
+  .pagination .pagination-list {
+    display: inline-block;
+    overflow: hidden;
+  }
+  
+  .pagination .pagination-list li {
+    margin-right: 5px;
+    display: inline-block;
+    margin-top: 10px;
+  }
+  
+  .pagination .pagination-list li:last-child {
+    margin-right: 0px;
+  }
+  
+  .pagination .pagination-list li a {
+    background: #fff;
+    color: #081828;
+    font-weight: 500;
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 8px 20px;
+    text-align: center;
+    border: 1px solid #eee;
+  }
+  
+  .pagination .pagination-list li.active a,
+  .pagination .pagination-list li:hover a {
+    background: #7E57FF;
+    color: #fff;
+    border-color: transparent;
+  }
+  
+  .pagination .pagination-list li a i {
+    font-size: 13px;
+  }
+  
+  .blog-grids.pagination {
+    margin-top: 50px;
+    text-align: center;
+  }
+  
+  .button .btn {
+    display: inline-block;
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 14px 30px;
+    background-color: #7E57FF;
+    color: #fff;
+    border: none;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    border-radius: 30px;
+    position: relative;
+    z-index: 1;
+    margin-right: 7px;
+    overflow: hidden;
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .button .btn {
+      padding: 14px 25px;
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .button .btn {
+      padding: 14px 25px;
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+  
+  .button .btn i {
+    display: inline-block;
+    margin-right: 5px;
+  }
+  
+  .button .btn:last-child {
+    margin: 0;
+  }
+  
+  .button .btn:hover {
+    color: #fff;
+    background-color: #081828;
+  }
+  
+  .button {
+    margin-left: 0 !important;
+  }
+  
+  .button .btn-alt {
+    background-color: #081828 !important;
+    color: #fff !important;
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .button .btn-alt {
+      padding: 14px 25px;
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .button .btn-alt {
+      padding: 14px 25px;
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+  
+  .button .btn-alt:hover {
+    background-color: #7E57FF !important;
+    color: #fff !important;
+  }
+  
+  .align-left {
+    text-align: left;
+  }
+  
+  .align-right {
+    text-align: right;
+  }
+  
+  .align-center {
+    text-align: center;
+  }
