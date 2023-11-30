@@ -8,15 +8,15 @@ import Sidebar from "../Sidebar/Sidebar";
   
     return (
       <div>
-        <BreadCrumbs />
-          <section className="section blog-grid-page mx-[100px]">
+        <BreadCrumbs id="#bread-crumb" />
+          <section className="section blog-grid-page mx-[200px] px-[110px]">
           <div className="container">
               <div className="row">
                   <BlogGrid />
                   <Sidebar />            
               </div>
           </div>
-      </section>
+        </section>
       </div>
  
     );

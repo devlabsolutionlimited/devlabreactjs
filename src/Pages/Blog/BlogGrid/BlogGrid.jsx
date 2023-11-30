@@ -1,6 +1,6 @@
 import React from 'react';
 import Pagination from './Pagination';
-import Card from './Card';
+import BlogCard from './BlogCard';
 import img1 from "../../../assets/images/icon/blog-1.png";
 import img2 from "../../../assets/images/icon/blog-2.png";
 import img3 from "../../../assets/images/icon/blog-3.png";
@@ -41,7 +41,7 @@ const cards = [
     <div className="col-lg-8 col-md-12 col-12">
         <div className="row">
             {cards.map((card, index) => (
-                <Card key={index} {...card} />
+                <BlogCard key={index} {...card} />
             ))}
         </div>
         <Pagination />
