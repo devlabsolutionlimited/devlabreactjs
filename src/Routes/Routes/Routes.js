@@ -1,6 +1,7 @@
 import Main from "../../Layout/Main";
 import About from "../../Pages/About/About/About";
 import Blog from "../../Pages/Blog/Blog/Blog";
+import BlogSingle from "../../Pages/Blog/BlogSingle/BlogSingle";
 import Home from "../../Pages/Home/Home/Home";
 import Login from "../../Pages/Login/Login";
 
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
             {
                 path: '/blog',
                 element: <Blog></Blog>
+            },
+            {
+                path: '/blog/posts',
+                element: <BlogSingle></BlogSingle>
             }
         ]
     }
