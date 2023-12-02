@@ -95,7 +95,7 @@ const Navbar = () => {
                   Blog
                 </Link>
                 <Link
-                  to="/dashboard"
+                  to="/contact"
                   className="  hover:text-primary rounded-md text-base font-semibold"
                 >
                   Contact
