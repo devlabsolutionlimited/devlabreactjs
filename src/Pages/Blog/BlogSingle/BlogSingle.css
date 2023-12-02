@@ -117,7 +117,7 @@
   }
   
   .post-comments .comments-list li .comment-desc .desc-top .reply-link:hover {
-    color: #7E57FF;
+    color: #e74c3c;
   }
   
   .post-comments .comments-list li .comment-desc .desc-top .reply-link i {
@@ -225,7 +225,7 @@
   }
   
   .comment-form form .form-box .form-control-custom:focus {
-    border-color: #7E57FF;
+    border-color: #e74c3c;
   }
   
   .comment-form form .form-box textarea.form-control-custom {
